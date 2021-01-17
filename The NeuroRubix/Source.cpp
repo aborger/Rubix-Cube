@@ -76,7 +76,6 @@ int main() {
 
 	//mainCube.scrambleCube();
 	mainCube.L();
-	mainCube.B();
 	cout << "Starting Cube: " << endl;
 	mainCube.outputCube();
 	system("PAUSE");
