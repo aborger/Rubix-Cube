@@ -48,7 +48,7 @@ This method taught me the most about AI and Machine Learning even though it did 
 
 This method also uses a genetic algorithm except each member contains a neural network. The neural network does not have a set structure, instead it starts as 54 input nodes (1 for each cubie, 13 output nodes (1 for each possible move), and a connection (takes the input, multiplies it by a weight, and gives it to the output). These members can reproduce and mutate to add more nodes or connections. Nodes and connection weights can also be changed. This algorithm is repeated until a member is found that can complete the starting cube.
 
-Note: If I were to redo this today I would've implemented RNN layers to allow for solving for more than one move and ran it until multiple scrambled cubes could be solved at a high accuracy rate.
+Note: If I were to redo this today I would've implemented a Deep Q Network (DQN) like the method I used in KaraV2, the second version of the AI stock trader I am still working on. This would allow it to look at states and perform moves that provide the best reward from each state.
 
 ### Reproduction
 The functions in this method responsible for reproduction are again the fitness function and mutation function. However, I could not figure out a good crossover function for the networks so I used a different selection method to create new members instead.
